@@ -83,3 +83,11 @@ True
 user_input_string=str(input())
 get_datatype(user_input_string)
 
+'''For those who who would love a shorter cut, you could
+use the "eval" method'''
+
+user_input=str(input())
+For each_test in ("isalnum","isalpha","isdigit","islower",
+"isupper"):
+    print(any(eval("i."+each_test+"()") for i in user_input))
+
